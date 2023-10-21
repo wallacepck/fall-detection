@@ -101,7 +101,6 @@ while True:
         draw_text_box(frame, "POTENTIAL FALL DETECTED", pos=(0, 640-32), text_color=(0,0,0), text_color_bg=(64,64,255))
 
     cv2.imshow("out", frame)
-    cv2.imwrite("demo\\out" + str(framecount) + ".png", frame)
     if cv2.waitKey(1) == ord('q'):
         break
 
